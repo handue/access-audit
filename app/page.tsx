@@ -201,7 +201,8 @@ export default function Home() {
             {ai && (
               <p className="privacy">
                 If enabled on the server, up to 12 finding snippets are sent to
-                OpenAI. Only submit content you have permission to share.
+                the configured AI provider. Only submit content you have
+                permission to share.
               </p>
             )}
             <div role="status" className="sr-only">

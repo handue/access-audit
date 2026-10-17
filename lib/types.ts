@@ -23,5 +23,8 @@ export type Report = {
   truncated: boolean;
   aiStatus: "off" | "enabled" | "unavailable" | "no-findings";
   aiMessage: string;
+  // Export provenance without changing the on-screen demo flow.
+  aiProvider?: "openai" | "muse";
+  aiModel?: string;
   duration: number;
 };

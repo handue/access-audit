@@ -2,7 +2,7 @@
 
 Verified locally on October 17, 2026 (America/Los_Angeles), Node 24.20.0.
 
-- `npm test`: 15 tests passed.
+- `npm test`: 19 tests passed.
 - `npm run build`: production compilation and static page generation passed.
 - `npm run typecheck`: passed.
 - Production HTTP server: homepage returned 200; HTML audit endpoint returned structured JSON.
@@ -16,3 +16,6 @@ Verified locally on October 17, 2026 (America/Los_Angeles), Node 24.20.0.
 - Live GPT-6 Luna invocation: all five demo findings received validated explanations (about 6.7 seconds).
 - Additional URL checks: example.com, W3C WAI tutorials, and Cheerio returned reports successfully.
 - Source formatting and core-operation comments added; tests, build and type checks passed afterward.
+
+- Muse/OpenAI provider selection, request formats, truncated/refused replies, missing keys, and batch ID matching checked with mocked responses.
+- After the provider update, live GPT-6 Luna returned explanations for all five demo findings in about 7.3 seconds.
