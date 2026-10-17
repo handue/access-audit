@@ -8,14 +8,25 @@ Paste a page's HTML or enter a public URL. AccessAudit checks five common proble
 
 ## Demo
 
-### Part 1
-https://github.com/user-attachments/assets/6d53d0b7-9bd5-4413-8d80-5e6ed8bf24c2
+### Part 1 - Scanning a webpage
+https://github.com/user-attachments/assets/6618738c-1123-4fda-a964-4553e5edb044
 
-### Part 2
-https://github.com/user-attachments/assets/694e6af6-8b87-4ae3-aa6a-b82681ccf610
 
-### Part 3
-https://github.com/user-attachments/assets/7a156ed3-12a3-4c7e-a4d7-d2068dd7644f
+
+### Part 2 - Reviewing AI explanations and rule-based guidance
+https://github.com/user-attachments/assets/7a2ccf0f-49cc-483f-9a22-d2c135513ea9
+
+https://github.com/user-attachments/assets/f35e18b7-3865-4752-9003-3f47d8575eac
+
+https://github.com/user-attachments/assets/38eff246-6220-4eff-9dd0-565d1874419e
+
+The scan returns 45 findings. To manage response time and API cost, the app is configured to add AI explanations to the first 12 findings in priority order. This is an application setting, not a model limit; the remaining findings include rule-based guidance.
+
+This clip shows the first 18 findings to keep the video short and demonstrate both types of guidance. The complete 45-finding report is available in before.json.
+
+### Part 3 - Checking the corrected page and exporting results
+
+https://github.com/user-attachments/assets/0f575082-7e79-4431-ba36-68efae94bcce
 
 Example reports from the W3C before-and-after demo:
 
