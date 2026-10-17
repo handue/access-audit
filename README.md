@@ -4,7 +4,7 @@ A small accessibility checker for HTML, with optional AI explanations.
 
 Paste a page's HTML or enter a public URL. AccessAudit checks five common problems, shows the relevant markup, and suggests what to change. The checks run without an API key. When AI is enabled, Muse Spark or GPT-6 Luna adds explanations to the findings.
 
-![Example audit results](docs/demo-results.jpg)
+![Example audit results](docs/demo-results.png)
 
 ## Run it
 
