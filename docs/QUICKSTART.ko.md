@@ -24,6 +24,6 @@ AI 기능은 `.env.local`에서 `ENABLE_AI=true`로 켭니다. Muse를 쓰려면
 
 설정 후 `npm run check:ai`로 실제 호출을 확인할 수 있습니다. `aiStatus: "enabled"`, `explained: 5`가 나오면 성공입니다. 서버는 다시 빌드해 실행하고 화면의 **Add AI explanations**를 선택하세요. 키를 채팅이나 GitHub에 올리지 마세요.
 
-GPT-6 Luna의 실제 AI 설명 생성까지 확인했습니다. 공개 배포 전까지 유료 AI 기능은 비공개 환경에서 사용하세요. Vercel 배포 절차와 프로젝트 설명은 README.md에 있습니다.
+Muse-spark-1.3/GPT-6 Luna의 실제 AI 설명 생성까지 확인했습니다. 공개 배포 전까지 유료 AI 기능은 비공개 환경에서 사용하세요. Vercel 배포 절차와 프로젝트 설명은 README.md에 있습니다.
 
 데모의 0건 결과는 이 다섯 가지 검사에서 발견한 문제가 없다는 뜻입니다. 전체 WCAG 준수 여부는 별도의 검증이 필요합니다.
