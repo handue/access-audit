@@ -156,4 +156,4 @@ AccessAudit explores barriers in everyday web interfaces. AccessLens is the next
 - [Cheerio](https://cheerio.js.org/docs/basics/loading/)
 - [Next.js route handlers](https://nextjs.org/docs/app/getting-started/route-handlers)
 
-[한국어 실행 안내](docs/QUICKSTART.ko.md) · [MIT license](LICENSE)
+[한국어 실행 안내](docs/QUICKSTART.ko.md)
