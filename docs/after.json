@@ -1,0 +1,11 @@
+{
+  "findings": [],
+  "total": 0,
+  "truncated": false,
+  "elements": 210,
+  "aiStatus": "no-findings",
+  "aiMessage": "No findings to explain. Manual accessibility testing is still needed.",
+  "source": "https://www.w3.org/WAI/demos/bad/after/home.html",
+  "timestamp": "2026-10-17T07:41:40.382Z",
+  "duration": 66
+}
