@@ -25,7 +25,8 @@ export default function Home() {
         body: JSON.stringify(
           mode === "html" ? { mode, html, ai } : { mode, url, ai },
         ),
-        signal: AbortSignal.timeout(40_000),
+        // Keep the browser request open beyond the server's 60-second budget.
+        signal: AbortSignal.timeout(65_000),
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data.error);

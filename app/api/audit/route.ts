@@ -3,7 +3,8 @@ import { audit } from "@/lib/audit";
 import { explain } from "@/lib/explain";
 import { fetchHtml, MAX_BYTES, readLimited } from "@/lib/safe-fetch";
 export const runtime = "nodejs";
-export const maxDuration = 45;
+// Budget: up to 10 seconds to fetch HTML, then 45 seconds for AI.
+export const maxDuration = 60;
 // Each mode has its own required field; the server never trusts the form state.
 const input = z.discriminatedUnion("mode", [
   z.object({

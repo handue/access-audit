@@ -185,6 +185,13 @@ test("Muse explanations validate the full batch before attaching any output", as
     assert.match(failed.aiMessage, /401/);
     assert.ok(!failed.aiMessage.includes("must not expose"));
     assert.equal(calls, 1);
+    // A timeout should remain distinguishable from a malformed provider reply.
+    const timedOut = await explain(invalid, true, (async () => {
+      throw new DOMException("Request expired", "TimeoutError");
+    }) as typeof fetch);
+    assert.equal(timedOut.aiStatus, "unavailable");
+    assert.match(timedOut.aiMessage, /45 seconds/);
+    assert.ok(invalid.every((finding) => !finding.ai));
     delete process.env.MODEL_API_KEY;
     assert.equal(
       (

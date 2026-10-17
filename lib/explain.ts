@@ -83,7 +83,9 @@ export async function explain(
     );
     const response = await fetcher(request.url, {
       method: "POST",
-      signal: AbortSignal.timeout(20_000),
+      // Muse may spend over 20 seconds reasoning and generating a 12-finding report.
+      // Leave room for the URL fetch inside the route and browser request budgets.
+      signal: AbortSignal.timeout(45_000),
       headers: {
         Authorization: `Bearer ${config.key}`,
         "Content-Type": "application/json",
@@ -127,7 +129,10 @@ export async function explain(
       aiMessage:
         error instanceof Error && error.message.startsWith("AI_PROVIDER")
           ? "AI provider configuration is invalid. Use auto, openai, or muse. Showing rule-based guidance."
-          : "AI could not complete this request. Your rule-based results are available below.",
+          : error instanceof Error &&
+              ["TimeoutError", "AbortError"].includes(error.name)
+            ? "AI took longer than 45 seconds to respond. Please try again. Your rule-based results are available below."
+            : "AI could not complete this request. Your rule-based results are available below.",
     };
   }
 }
