@@ -51,7 +51,9 @@ npm run check:ai
 
 This makes a real API request using your key. Success prints `aiStatus: "enabled"`, the provider/model, and `explained: 5`. It never prints your key. Missing configuration or provider failures return a nonzero exit status.
 
-AI is optional. If the key is missing or the request fails, the report still includes the original findings and rule-based guidance. The model receives up to 12 finding excerpts, not the whole page. It returns structured output, which is checked for valid fields and matching finding IDs before use. It cannot change the findings or their priorities.
+AI is optional. If the key is missing or the request fails, the report still includes the original findings and rule-based guidance. The model receives finding excerpts, not the whole page, and returns structured output. Each explanation is validated and matched to its finding ID before use. The model cannot change the findings or their priorities.
+
+The rules scan the full submitted HTML. For AI explanations, the app takes up to 12 findings in priority order to keep response time, output length, and API cost manageable. This is an application setting, not a model limit. Findings outside that batch still include the rule-based impact, suggested fix, and example code.
 
 Only submit markup you are comfortable sending to the configured provider. Reports are not stored in a database. OpenAI requests use `store: false`; provider retention and use policies still apply. See [OpenAI's data controls](https://developers.openai.com/api/docs/guides/your-data) and the policies applicable to your Meta Model API account.
 
