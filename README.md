@@ -22,7 +22,7 @@ https://github.com/user-attachments/assets/38eff246-6220-4eff-9dd0-565d1874419e
 
 The scan returns 45 findings. To manage response time and API cost, the app is configured to add AI explanations to the first 12 findings in priority order. This is an application setting, not a model limit; the remaining findings include rule-based guidance.
 
-This clip shows the first 18 findings to keep the video short and demonstrate both types of guidance. The complete 45-finding report is available in before.json.
+These clips show the first 18 findings to keep the video short and demonstrate both types of guidance. The complete 45-finding report is available in before.json.
 
 ### Part 3 - Checking the corrected page and exporting results
 
