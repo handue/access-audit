@@ -6,6 +6,22 @@ Paste a page's HTML or enter a public URL. AccessAudit checks five common proble
 
 ![Example audit results](docs/demo-results.png)
 
+## Demo
+
+### Part 1
+https://github.com/user-attachments/assets/6d53d0b7-9bd5-4413-8d80-5e6ed8bf24c2
+
+### Part 2
+https://github.com/user-attachments/assets/694e6af6-8b87-4ae3-aa6a-b82681ccf610
+
+### Part 3
+https://github.com/user-attachments/assets/7a156ed3-12a3-4c7e-a4d7-d2068dd7644f
+
+Example reports from the W3C before-and-after demo:
+
+- [Before: 45 findings, including 12 AI explanations](docs/before.json)
+- [After: no findings in the five implemented checks](docs/after.json)
+
 ## Run it
 
 Use Node.js 24, or at least 22.19.
